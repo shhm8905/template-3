@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { WorkSection, WorkTitle, Span, WorkPart, Icon, PartTitle, PartLine, PartDesc } from "./style.js";
-import axios from 'axios';
+import {works} from './works';
 
 class Work extends Component {
     state = {
-        works: []
-    }
-    
-    componentDidMount() {
-        axios.get('data.json').then(res => { this.setState({ works: res.data.works }) })
+        works: works
     }
     
     render() {

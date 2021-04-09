@@ -1,17 +1,10 @@
 import React from 'react';
 import { SocMedia, Social, Icon, Info, Span, SocialDesc } from "./style.js";
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import {soc} from './soc.js';
 
 const SocialMedia = () => {
 
-    const [socials, setsocial] = useState([])
-
-    useEffect(() => {
-        axios.get('../../../data.json').then(res => { setsocial(res.data.social) })
-    }, [])
-
-    const Soc = socials.map((item) => {
+    const Soc = soc.map((item) => {
         return (
             <Social key={item.id} item={item.id}>
                 <Icon className={item.icon}></Icon>

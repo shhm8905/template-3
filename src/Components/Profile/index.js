@@ -1,15 +1,8 @@
 import React from 'react';
 import { ProfileItem, ProfileList, ProfileSk, ProfileSkPro, ProfileTitel, Span, SpanWeb, SkillsTitle, SkillsDesc, SkillsBar, BarTitle, SkillsPerc, SkillsParent, SkillsSection, ParentSpan } from "./style.js";
-import { useState, useEffect } from "react";
-import axios from 'axios';
+import{skills} from './skills';
 
 const Profile = () => {
-
-    const [skills, setskill] = useState([])
-
-    useEffect(() => {
-        axios.get('../../../data.json').then(res => { setskill(res.data.skills) })
-    }, [])
 
     const Pskills = skills.map((skill) => {
         return (
@@ -36,12 +29,8 @@ const Profile = () => {
                             : Hazem Khaleel
                         </ProfileItem>
                         <ProfileItem>
-                            <span>Birthday</span>
-                            : 1989/02/05
-                        </ProfileItem>
-                        <ProfileItem>
                             <span>Address</span>
-                            :  Degerfors 69333
+                            :  Poesigatan 17 E 70371 Örebro
                         </ProfileItem>
                         <ProfileItem>
                             <span>Phone</span>
@@ -53,7 +42,7 @@ const Profile = () => {
                         </ProfileItem>
                         <ProfileItem>
                             <span>Website</span>
-                            <SpanWeb> : www.google.com</SpanWeb>
+                            <SpanWeb> : https://github.com/shhm8905</SpanWeb>
                         </ProfileItem>
                     </ProfileList>
                 </ProfileSkPro>
