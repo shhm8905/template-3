@@ -1,19 +1,17 @@
 import React from 'react';
-import { PortfolioSection, PortfolioTitle, PortfolioList, PortfolioItem, Span, ImageWrapper, OverlaySpan, Overlay, Image } from "./style.js";
-import axios from 'axios';
-import { useState, useEffect } from "react";
+import { PortfolioSection, PortfolioTitle, Span, ImageWrapper, OverlaySpan, Overlay, Image } from "./style.js";
+import{portfolio} from "./portfolio.js";
+
+
 
 const Portfolio = () => {
+        
 
-    const [images, setImages] = useState([])
-
-    useEffect(() => {
-        axios.get('../../../data.json').then(res => { setImages(res.data.portfolio) })
-    }, [])
-    const PortfolioImages = images.map((ImageItem) => {
+    
+    const PortfolioImages = portfolio.map((ImageItem) => {
         return (
             <ImageWrapper key={ImageItem.id} >
-                <Image src={ImageItem.image} alt="" />
+                <Image src={ImageItem.image}  />
                 <Overlay>
                     <OverlaySpan>
                         Show Image
@@ -25,13 +23,7 @@ const Portfolio = () => {
     return (
         <PortfolioSection>
             <PortfolioTitle><Span>My</Span> Portfolio</PortfolioTitle>
-            <PortfolioList>
-                <PortfolioItem>All</PortfolioItem>
-                <PortfolioItem>HTML</PortfolioItem>
-                <PortfolioItem>Photoshop</PortfolioItem>
-                <PortfolioItem>Wordpress</PortfolioItem>
-                <PortfolioItem>Mobile</PortfolioItem>
-            </PortfolioList>
+            
 
             <div className="box">
 

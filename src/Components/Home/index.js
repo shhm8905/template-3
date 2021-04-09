@@ -1,6 +1,7 @@
 import React from 'react';
 import { Hom, HomInfo, HomeInformation, HomeBtn, HomeDesc, HomeTitle, Span } from './style';
 
+
 const Home = () => {
     return (
         <Hom>

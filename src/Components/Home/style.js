@@ -1,15 +1,14 @@
 import styled from "styled-components";
+import im from './home.jpg';
 
 export const Hom = styled.div`
     height: 500px;
-    background: url('../../../images/home/home-bg.jpg');
+    background: url(${im});
     background-size: cover;
     background-position: center;
     text-align: center;
     position: relative;
-    @media(max-width: 400px){
-        height: 365px;
-    }
+    
 `
 
 export const HomeInformation = styled.div`

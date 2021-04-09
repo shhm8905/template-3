@@ -21,27 +21,6 @@ export const Span = styled.span`
   font-weight: normal;
 `
 
-export const PortfolioList = styled.ul`
-  list-style: none;
-  text-align: center;
-  padding:0;
-  margin: 20px 0;
-`
-
-export const PortfolioItem = styled.li`
-  display: inline-block;
-  width: 100px;
-  padding: 10px;
-  &:hover{
-    background: #eb5424;
-    color: #fff;
-  }
-  @media(max-width:768px){
-    display: block;
-    margin: auto;
-  }
-`
-
 export const ImageWrapper = styled.div`
   width: 25%;
   float: left;
