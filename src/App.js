@@ -12,8 +12,8 @@ class App extends Component {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Index} />
-          <Route path="/Contact" component={Contact} />
+          <Route path="/template-3" exact component={Index} />
+          <Route path="/template-3/Contact" component={Contact} />
         </Switch>
         
       </BrowserRouter>

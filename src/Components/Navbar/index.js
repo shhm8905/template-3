@@ -17,12 +17,12 @@ const Navbar = () => {
 
 
                 <UlList>
-                    <ListItem><StyledNavLink to="/">Home</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink to="/template-3">Home</StyledNavLink></ListItem>
                     <ListItem><StyledNavLink to="/#">Work</StyledNavLink></ListItem>
                     <ListItem><StyledNavLink to="/#">Portfolio</StyledNavLink></ListItem>
                     <ListItem><StyledNavLink to="/#">Resume</StyledNavLink></ListItem>
                     <ListItem><StyledNavLink to="/#">About</StyledNavLink></ListItem>
-                    <ListItem><StyledNavLink to="/Contact">Contact</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink to="/template-3/Contact">Contact</StyledNavLink></ListItem>
                 </UlList>
 
             </div>
