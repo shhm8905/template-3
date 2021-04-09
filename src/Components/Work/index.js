@@ -3,12 +3,14 @@ import { WorkSection, WorkTitle, Span, WorkPart, Icon, PartTitle, PartLine, Part
 import axios from 'axios';
 
 class Work extends Component {
-    componentDidMount() {
-        axios.get('../../../data.json').then(res => { this.setState({ works: res.data.works }) })
-    }
     state = {
         works: []
     }
+    
+    componentDidMount() {
+        axios.get('data.json').then(res => { this.setState({ works: res.data.works }) })
+    }
+    
     render() {
         const { works } = this.state;
 
