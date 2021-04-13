@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProfileItem, ProfileList, ProfileSk, ProfileSkPro, ProfileTitel, Span, SpanWeb, SkillsTitle, SkillsDesc, SkillsBar, BarTitle, SkillsPerc, SkillsParent, SkillsSection, ParentSpan } from "./style.js";
+import { ProfileItem, ProfileList, ProfileSk, ProfileSkPro, ProfileTitel, Span, SpanWeb, SkillsTitle, Hr, SkillsBar, BarTitle, SkillsPerc, SkillsParent, SkillsSection, ParentSpan,A } from "./style.js";
 import{skills} from './skills';
 
 const Profile = () => {
@@ -19,10 +19,11 @@ const Profile = () => {
 
 
     return (
-        <ProfileSk>
+        <ProfileSk id="resume">
             <div className="container">
                 <ProfileSkPro>
                     <ProfileTitel><Span>My </Span>Profile</ProfileTitel>
+                    <Hr/>
                     <ProfileList>
                         <ProfileItem>
                             <span>Name</span>
@@ -34,24 +35,22 @@ const Profile = () => {
                         </ProfileItem>
                         <ProfileItem>
                             <span>Phone</span>
-                            :  0736468876
+                            :  <A href="tel:0736468876" >0736468876</A>
                         </ProfileItem>
                         <ProfileItem>
                             <span>Email</span>
-                            :  hazem-khalil@hotmail.com
+                            : <A href="mailto:hazem-khalil@hotmail.com">hazem-khalil@hotmail.com</A> 
                         </ProfileItem>
                         <ProfileItem>
                             <span>Website</span>
-                            <SpanWeb> : https://github.com/shhm8905</SpanWeb>
+                            <SpanWeb> : <A href=" https://github.com/shhm8905" >https://github.com/shhm8905</A> </SpanWeb>
                         </ProfileItem>
                     </ProfileList>
                 </ProfileSkPro>
 
                 <SkillsSection>
                     <SkillsTitle>Some <Span>skills</Span></SkillsTitle>
-                    <SkillsDesc>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos praesentium blanditiis esse cupiditate, omnis similique.
-                    </SkillsDesc>
+                    <Hr/>
                     {Pskills}
                 </SkillsSection>
 

@@ -1,19 +1,26 @@
 import styled from "styled-components";
 
 export const PortfolioSection = styled.div`
-  background: #f8f8f8;
   padding-top: 20px;
+  padding-bottom:80px;
   overflow: hidden;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23616161'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
   @media(max-width:768px){
-    padding:0;
+    padding:30px 0;
   }
 `
 
 export const PortfolioTitle = styled.h2`
   text-align: center;
-  font-size: 35px;
-  @media(max-width:400px){
+  font-size: 60px;
+  margin-bottom:0;
+  color:#fff;
+  @media(max-width:768px){
     font-size: 25px;
+    margin:0;
   }
 `
 
@@ -30,7 +37,7 @@ export const ImageWrapper = styled.div`
   @media(max-width:768px){
     width: 50%;
   }
-  @media(max-width:400px){
+  @media screen and (max-width:400px){
     width: 100%;
   }
 `
@@ -62,4 +69,28 @@ export const OverlaySpan = styled.span`
   cursor: pointer;
   border: 2px solid #eb5424;
 `
+export const Hr = styled.hr`
+  display: block;
+  height: 7px;
+  background-color: #eb5424;
+  width: 429px;
+  border: none;
+  margin-bottom: 80px;
+  @media screen and (max-width:768px){
+    width: 200px;
+    margin-bottom: 35px;
+  }
+`
 
+export const ImgWind = styled.div`
+  position:fixed;
+  top:0;
+  left:0;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+  width:100vw;
+  background-color:rgba(235,84,36,0.5);
+  text-align:center;
+  display:none;
+`

@@ -1,36 +1,20 @@
-import React, { Component } from 'react';
-import { WorkSection, WorkTitle, Span, WorkPart, Icon, PartTitle, PartLine, PartDesc } from "./style.js";
-import {works} from './works';
+import React from 'react';
+import { WorkSection, WorkTitle, Span, Page, Hr } from "./style.js";
 
-class Work extends Component {
-    state = {
-        works: works
-    }
+
+const Work =()=> {
     
-    render() {
-        const { works } = this.state;
-
-        const workslist = works.map((workItem) => {
-            return (
-                <WorkPart first={workItem.id} key={workItem.id}>
-                    <Icon className={workItem.icon_name}></Icon>
-                    <PartTitle>{workItem.title}</PartTitle>
-                    <PartLine />
-                    <PartDesc>
-                        {workItem.body}
-                    </PartDesc>
-                </WorkPart>
-            )
-        });
         return (
-            <WorkSection>
+            <WorkSection id="work">
                 <div className="container">
                     <WorkTitle><Span>My</Span> Work</WorkTitle>
-                    {workslist}
+                    <Hr/>
+                    <Page src="https://shhm8905.github.io/rock-game/"></Page>
+                    <Page src="https://shhm8905.github.io/transfer-app/"></Page>
                 </div>
             </WorkSection>
         );
-    }
+    
 }
 
 export default Work; 

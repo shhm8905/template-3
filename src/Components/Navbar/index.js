@@ -1,32 +1,33 @@
-import React from 'react';
-
+import React,{useState} from 'react';
 import { NavbarSection, Logo, LogoText, UlList, ListItem, StyledNavLink, Input, Label } from './style.js';
 
 const Navbar = () => {
+    const[checked,setChecked]=useState(false);
+
+    const handleChange =(e)=>{
+        const checked=e.target.checked;
+        setChecked(checked);
+    }
+    
+    
     return (
-        <NavbarSection>
-
+        <NavbarSection id="navbar" >
             <div className="container">
-
                 <Logo>
-                    <LogoText>Hazem Profile</LogoText>
+                    <LogoText smooth to="#navbar" >My Profile</LogoText>
                 </Logo>
 
-                < Input type="checkbox" id=" nav " />
+                < Input type="checkbox" checked={checked} onChange={handleChange} id=" nav " />
                 < Label htmlFor=" nav " > </ Label >
 
-
                 <UlList>
-                    <ListItem><StyledNavLink to="/template-3">Home</StyledNavLink></ListItem>
-                    <ListItem><StyledNavLink to="/#">Work</StyledNavLink></ListItem>
-                    <ListItem><StyledNavLink to="/#">Portfolio</StyledNavLink></ListItem>
-                    <ListItem><StyledNavLink to="/#">Resume</StyledNavLink></ListItem>
-                    <ListItem><StyledNavLink to="/#">About</StyledNavLink></ListItem>
-                    <ListItem><StyledNavLink to="/template-3/Contact">Contact</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink smooth to="#work">Work</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink smooth to="#portfolio">Portfolio</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink smooth to="#resume">Resume</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink smooth to="#about">About</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink smooth to="#contact">Contact</StyledNavLink></ListItem>
                 </UlList>
-
-            </div>
-
+            </div>    
         </NavbarSection>
 
     );

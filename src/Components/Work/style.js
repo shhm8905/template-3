@@ -2,13 +2,20 @@ import styled from "styled-components";
 
 export const WorkSection = styled.div`
   height: auto;
-  padding: 50px 0;
+  padding: 30px 0;
   overflow: hidden;
-  background: #fff;
-  @media(max-width:1024px){
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23dddddd'/%3E%3Cstop offset='1' stop-color='%23eeeeee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='68' height='68' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='34' cy='34' r='34'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.34'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: -webkit-center;
+  @media screen and (max-width:1916px){
+    text-align: -webkit-center;
+  }
+  @media screen and(max-width:1024px){
     width:100%;
   }
-  @media(max-width:768px){
+  @media screen and(max-width:768px){
     padding:0;
   }
   
@@ -17,11 +24,10 @@ export const WorkSection = styled.div`
 export const WorkTitle = styled.h2`
   font-size: 60px;
   text-align:center;
+  margin-bottom:0;
   @media(max-width:768px){
-    font-size:40px;
-  }
-  @media(max-width:400px){
     font-size:30px;
+    margin:0;
   }
 `
 
@@ -29,56 +35,28 @@ export const Span = styled.span`
   font-weight: normal;
 `
 
-export const WorkPart = styled.div`
-  margin-top: 20px;
-  width: 30%;
-  float: left;
-  height: auto;
-  padding: 100px 0;
-  border: 1px solid #888;
-  box-sizing: border-box;
-  text-align: center;
- 
-  margin-left:${props => props.first === 1 ? '0' : '5%'};
-  @media(max-width:1024px){
-    box-sizing:border-box;
-    width:32%;
-    margin-left:${props => props.first === 1 ? '0' : '2%'};
+export const Page = styled.iframe`
+  width:765px;
+  height:800px;
+  margin:20px;
+  @media screen and (max-width:1916){
+    text-align: -webkit-center;
   }
-  @media(max-width:768px){
-    width: 60%;
-    margin:20px auto;
-    float:none;
-    padding:75px 0;
+  @media screen and (max-width:768px){
+    width:100%;
+    height:95vh;
+    margin:0;
   }
-  @media(max-width:400px){
-    width: 90%;
-    margin:20px auto;
-    float: none;
-    padding:50px 0;
+`
+export const Hr = styled.hr`
+  display: block;
+  height: 7px;
+  background-color: #eb5424;
+  width: 429px;
+  border: none;
+  margin-bottom: 80px;
+  @media screen and (max-width:768px){
+    width: 200px;
+    margin-bottom: 35px;
   }
- 
-`
-
-export const Icon = styled.i`
-  color: #888;
-  margin-bottom: 20px;
-`
-
-export const PartTitle = styled.h4`
-  font - size: 25px;
-  color: #eb5424;
-  margin - bottom: 20px;
-`
-
-export const PartLine = styled.hr`
-  width: 60 %;
-  margin: auto;
-  margin - bottom: 20px;
-`
-
-export const PartDesc = styled.p`
-  font - size: 14px;
-  color: #888;
-  padding: 20px;
 `

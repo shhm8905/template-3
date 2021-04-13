@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import{HashLink} from "react-router-hash-link";
+import close from './images/close.png';
+import open from './images/open.png';
 
 export const NavbarSection = styled.div`
   padding: 10px 0;
   overflow: hidden;
-  background: #fff;
+  background: #333;
   position: relative;
   border-bottom: 1px solid #000;
 `
@@ -13,23 +15,27 @@ export const Logo = styled.div`
   
   display: inline-block;
   float: left;
-  @media(max-width:712px){
+  @media(max-width:768px){
    
     float: none;
   }
 `
 
-export const LogoText = styled.h2`
-  padding:17px;
+export const LogoText = styled(HashLink)`
+  padding:8px;
   margin:0;
   font-size: 30px;
-    font-weight: bold;
+  font-weight: bold;
+  color: #eb5424;
+  display:block;
+  text-decoration:none;
+  font-family: 'Pacifico', cursive;
     @media(max-width:1024px){
       font-size: 20px;
       padding:24px;
       margin: 0;
     }
-    @media(max-width:712px){
+    @media(max-width:768px){
       padding: 0 0 0 10px;
     }
     
@@ -37,20 +43,36 @@ export const LogoText = styled.h2`
 
 export const ListItem = styled.li`
   display: inline-block;
-  @media(max-width:712px){
+  @media(max-width:768px){
     display: block;
     text-align: center;
   }
 `
 
-export const StyledNavLink = styled(NavLink)`
+export const StyledNavLink = styled(HashLink)`
   display: block;
-  color: #222;
+  color: #c3c3c3;
   text-decoration: none;
   padding: 10px 15px;
   font-weight: bold;
   &:hover{color: #eb5424;} 
 
+`
+export const NavBtn = styled.button`
+  display: block;
+  color: #222;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  background: inherit;
+  border: none;
+  outline: none;
+  font-size:16px;
+  &:hover{color: #eb5424;}
+  @media screen and (max-width:768px){
+    display:inline-block;
+    
+  }
 `
 
 export const Input = styled.input`
@@ -59,15 +81,15 @@ export const Input = styled.input`
   right: 35px;
   opacity: 0;
   visibility: hidden;
-  @media screen and (max-width:712px){
+  @media screen and (max-width:768px){
     
     &:checked ~ Ul{
       display: block;
     }
-     &:checked ~ Label{
-      background: url('../../../images/navbar/close.png') no-repeat ; 
-    background-size: cover;
-   }
+    &:checked ~ Label{
+      background: url(${close}) no-repeat ; 
+      background-size: cover;
+    }
   } 
 `
 
@@ -86,7 +108,7 @@ export const UlList = styled.ul`
     padding: 0 0 0 35px;
   }
   
-  @media(max-width:712px){
+  @media(max-width:768px){
     width: 100%;
     float:  none;
     margin-top: 20px;
@@ -98,15 +120,15 @@ export const UlList = styled.ul`
 
 export const Label = styled.label`
   position: absolute;
-  top: 3px;
+  top: 7px;
   right: 25px;
   display: none;
   width: 40px;
   height: 40px;
-  background: url('../../../images/navbar/open.png') no-repeat ;
+  background: url(${open}) no-repeat ;
   background-size: cover;
   cursor: pointer;
-  @media(max-width:712px){
+  @media(max-width:768px){
   display: block;
 }
 `

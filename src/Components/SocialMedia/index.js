@@ -1,29 +1,17 @@
 import React from 'react';
 import { SocMedia, Social, Icon, Info, Span, SocialDesc } from "./style.js";
-import {soc} from './soc.js';
 
 const SocialMedia = () => {
 
-    const Soc = soc.map((item) => {
-        return (
-            <Social key={item.id} item={item.id}>
-                <Icon className={item.icon}></Icon>
-                <SocialDesc>
-                    <Span>{item.title}</Span>
-                    <Info>{item.body}</Info>
-                </SocialDesc>
-            </Social>
-        )
-    })
-
-
-
     return (
         <SocMedia>
-
-            {Soc}
-
-
+            <Social href="https://www.facebook.com/hazem.khalil.355">
+                <Icon className="icon fa fa-facebook fa-lg"></Icon>
+                <SocialDesc>
+                    <Span>Follow Me on</Span>
+                    <Info>Social Facebook</Info>
+                </SocialDesc>
+            </Social>
         </SocMedia>
     );
 }

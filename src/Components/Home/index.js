@@ -4,15 +4,15 @@ import { Hom, HomInfo, HomeInformation, HomeBtn, HomeDesc, HomeTitle, Span } fro
 
 const Home = () => {
     return (
-        <Hom>
+        <Hom id="home">
             <div className="container">
                 <HomeInformation>
-                    <HomeTitle>Hazem Khaleel</HomeTitle>
-                    <HomInfo>Creative Director</HomInfo>
+                    <HomeTitle>Welcome to my page</HomeTitle>
                     <HomeDesc>
-                        Iam a professional <Span>UX Designer</Span> and Front-End Developer creating modern and resposive designs to Web and Mobile. Let us work together. Thank you.
+                     <HomInfo>Creative Developer</HomInfo>  
+                    I'm Hazem from Syrien, and I do content on <Span>Design and Development</Span>. I really enjoy learning languages and frameworks like <Span>React and React Native</Span>, as well as work in Back-end like <Span>node.js</Span> and database like <Span>mongoDB</Span>. I also enjoy wireframing <Span>UI, UX</Span> and design in general.
                     </HomeDesc>
-                    <HomeBtn>Let's Begin</HomeBtn>
+                    <HomeBtn href="https://github.com/shhm8905" target='_blank' >Let's see my profile on github</HomeBtn>
                 </HomeInformation>
             </div>
         </Hom>

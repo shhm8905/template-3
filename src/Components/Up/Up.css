@@ -1,0 +1,24 @@
+.upIcon{
+    position: fixed;
+    top: 80vh;
+    right: 30px;
+    background-color: #ea5424;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+    transition: background-color 0.5s ease-in-out;
+}
+.upIcon:hover{
+    background-color: #fff;
+}
+.upIcon:hover .icon{
+    color: #ea5424;
+}
+.icon{
+    color: #fff;
+    font-size: 40px; 
+}

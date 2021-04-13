@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import Home from './../Home';
-import About from './../About';
-import Footer from './../Footer';
-import Profile from './../Profile';
-import Portfolio from './../Portfolio';
-import Work from './../Work';
-import SocialMedia from './../SocialMedia';
+import Home from '../Home/index';
+import About from '../About/index';
+import Footer from '../Footer/index';
+import Profile from '../Profile/index';
+import Portfolio from '../Portfolio/index';
+import Work from '../Work/index';
+import SocialMedia from '../SocialMedia/index';
+import Contact from "../Contact/index";
+import Up from '../Up/Up';
 
 
 
@@ -13,15 +15,17 @@ class Index extends Component {
 
     render() {
         return (
-            <div>
+            <>
+                <Up/>
                 <Home />
                 <Work />
                 <Portfolio />
                 <Profile />
                 <About />
+                <Contact/>
                 <SocialMedia />
                 <Footer />
-            </div>
+            </>
         );
     }
 }

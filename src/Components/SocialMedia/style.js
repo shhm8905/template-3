@@ -2,22 +2,19 @@ import styled from "styled-components";
 
 
 export const SocMedia = styled.div`
-  height: auto;
-  overflow: hidden;
+  height: 110px;
+  width:100%;
+  background:#3b5998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media(max-width:712px){
+    height:70px;
+  }
 `
 
-export const Social = styled.div`
-  width: 33.33%;
-  float: left;
-  box-sizing: border-box;
-  padding: 100px 0 100px 60px;
-  background:${props => props.item === 1 ? '#3b5998' : ''};
-  background:${props => props.item === 2 ? '#498cbf' : ''};
-  background:${props => props.item === 3 ? '#cc2127' : ''};
-  @media(max-width:768px){
-    width: 100%;
-    float: none;
-  }
+export const Social = styled.a`
+  text-decoration:none;
 `
 
 export const Icon = styled.i`
@@ -26,15 +23,18 @@ export const Icon = styled.i`
   background: #fff;
   text-align: center;
   line-height: 50px;
-  color: #888;
+  color: #3b5998;
   float: left;
+  border-radius: 50%;
   margin-right: 10px;
-  margin-top:27px;
+  margin-top:23px;
+  font-size: 32px;
   @media(max-width:768px){
     width:  40px;
     height: 40px;
     line-height: 40px;
-    margin-top: 21px;
+    margin-top: 15px;
+    font-size:24px;
   }
 `
 
@@ -52,6 +52,9 @@ export const SocialDesc = styled.p`
 export const Span = styled.span`
   display: block;
   margin-bottom: 8px;
+  @media(max-width:768px){
+    margin-bottom: 3px;
+  }
 `
 
 export const Info = styled.span`
