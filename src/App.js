@@ -15,7 +15,7 @@ const App =()=> {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route path="/template-3" exact component={Index} />
+          <Route path="/My-CV" exact component={Index} />
           <Route path="/work" component={Work} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/resume" component={Profile} />
