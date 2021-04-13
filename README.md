@@ -1,5 +1,5 @@
 ### template-3
 
 <p align="center">
-  <img src="https://github.com/shhm8905/Memories-App-Mern/blob/master/client/src/images/Memories-App.png" />
+  <img src="https://github.com/shhm8905/template-3/blob/master/public/myprofile.png" />
 </p>
