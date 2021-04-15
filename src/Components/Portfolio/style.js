@@ -36,10 +36,10 @@ export const ImageWrapper = styled.div`
   float: left;
   font-size: 0;
   position: relative;
-  @media(max-width:768px){
+  @media(max-width:1024px){
     width: 50%;
   }
-  @media screen and (max-width:400px){
+  @media screen and (max-width:500px){
     width: 100%;
   }
 `
@@ -73,6 +73,9 @@ export const OverlaySpan = styled.span`
   cursor: pointer;
   border: 2px solid #eb5424;
   color:#eb5424;
+  @media screen and (max-width:1000px){
+    padding:10px;
+  }
 `
 export const Hr = styled.hr`
   display: block;
@@ -102,4 +105,21 @@ export const ImgWind = styled.div`
   background-color:rgba(235,84,36,0.5);
   text-align:center;
   display:none;
+`
+export const Img = styled.div`
+  width:50vw;
+  height:80vh;
+  @media screen and (max-width:1024px){
+    width:80vw;
+    height:60vh;
+  }
+  @media screen and (max-width:768px){
+    width:90vw;
+    height:50vh;
+  }
+  @media screen and (max-width:500px){
+    width:100vw;
+    height:50vh;
+  }
+
 `
