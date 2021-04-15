@@ -10,7 +10,7 @@ const Work =()=> {
                     <WorkTitle><Span>My</Span> Work</WorkTitle>
                     <Hr/>
                     <Page src="https://shhm8905.github.io/rock-game/"></Page>
-                    <Page src="https://shhm8905.github.io/transfer-app/"></Page>
+                    <Page src="https://shhm8905.github.io/Transfer-App/"></Page>
                 </div>
             </WorkSection>
         );

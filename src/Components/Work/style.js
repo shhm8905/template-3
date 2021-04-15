@@ -25,6 +25,9 @@ export const WorkTitle = styled.h2`
   font-size: 60px;
   text-align:center;
   margin-bottom:0;
+  @media(max-width:1000px){
+    font-size:40px;
+  }
   @media(max-width:768px){
     font-size:30px;
     margin:0;
@@ -39,13 +42,17 @@ export const Page = styled.iframe`
   width:765px;
   height:800px;
   margin:20px;
-  @media screen and (max-width:1916){
+  @media screen and (max-width:1000px){
     text-align: -webkit-center;
+    height:700px;
+    width:95%;
   }
   @media screen and (max-width:768px){
     width:100%;
-    height:95vh;
     margin:0;
+  }
+  @media screen and (max-width:400px){
+    height:500px;
   }
 `
 export const Hr = styled.hr`
@@ -55,6 +62,10 @@ export const Hr = styled.hr`
   width: 429px;
   border: none;
   margin-bottom: 80px;
+  @media screen and (max-width:1000px){
+    width: 240px;
+    margin-bottom: 50px;
+  }
   @media screen and (max-width:768px){
     width: 200px;
     margin-bottom: 35px;

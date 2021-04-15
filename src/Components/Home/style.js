@@ -21,6 +21,10 @@ export const HomeInformation = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width:60%;
+    @media screen and (max-width:1000px){
+        width: 70%;
+    }
     @media screen and (max-width:768px){
         width: 100%;
     }
@@ -30,12 +34,12 @@ export const HomeTitle = styled.h2`
     font-size: 60px;
     font-weight: bold;
     color: #5e5e5e;
-    @media screen and (max-width: 1024px){
-        font-size : 50px;
+    @media screen and (max-width: 1000px){
+        font-size : 40px;
+        color:#fff;
     }
     @media screen and (max-width: 768px){
         font-size : 30px;
-        color : #fff;
     }
     @media screen and (max-width:400px){
         font-size : 25px ;
@@ -56,8 +60,8 @@ export const HomInfo = styled.b`
 export const HomeDesc = styled.p`
     font-size: 20px;
     line-height: 1.5;
-    color: #5e5e5e;
-    background-color: #0000000f;
+    color: #f3f3f3d4;
+    background-color: #0000007a;
     margin-bottom: 40px;
     border-radius: 20%;
     padding: 30px 20px 30px 20px;
@@ -86,6 +90,7 @@ export const HomeBtn = styled.a`
     cursor: pointer;
     font-weight: bold;
     border-radius: 50%;
+    transition: background,color 1s ease-in-out;
     &:hover{
         background: #fff;
         color: #eb5424

@@ -1,18 +1,16 @@
 import styled from "styled-components";
 import{HashLink} from "react-router-hash-link";
-import close from './images/close.png';
-import open from './images/open.png';
+import close from './images/close1.png';
+import open from './images/op.png';
 
 export const NavbarSection = styled.div`
-  padding: 10px 0;
   overflow: hidden;
-  background: #333;
+  background: #33333326;
   position: relative;
   border-bottom: 1px solid #000;
 `
 
 export const Logo = styled.div`
-  
   display: inline-block;
   float: left;
   @media(max-width:768px){
@@ -32,11 +30,11 @@ export const LogoText = styled(HashLink)`
   font-family: 'Pacifico', cursive;
     @media(max-width:1024px){
       font-size: 20px;
-      padding:24px;
+      padding:14px;
       margin: 0;
     }
     @media(max-width:768px){
-      padding: 0 0 0 10px;
+      padding:10px;
     }
     
 `
@@ -51,10 +49,11 @@ export const ListItem = styled.li`
 
 export const StyledNavLink = styled(HashLink)`
   display: block;
-  color: #c3c3c3;
+  color: #0000008c;
   text-decoration: none;
   padding: 10px 15px;
   font-weight: bold;
+  transition: color 0.5s ease-in-out;
   &:hover{color: #eb5424;} 
 
 `
@@ -77,8 +76,8 @@ export const NavBtn = styled.button`
 
 export const Input = styled.input`
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 17px;
+  right: 33px;
   opacity: 0;
   visibility: hidden;
   @media screen and (max-width:768px){
@@ -120,11 +119,11 @@ export const UlList = styled.ul`
 
 export const Label = styled.label`
   position: absolute;
-  top: 7px;
+  top: 10px;
   right: 25px;
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background: url(${open}) no-repeat ;
   background-size: cover;
   cursor: pointer;

@@ -18,6 +18,9 @@ export const PortfolioTitle = styled.h2`
   font-size: 60px;
   margin-bottom:0;
   color:#fff;
+  @media(max-width:1000px){
+    font-size: 40px;
+  }
   @media(max-width:768px){
     font-size: 25px;
     margin:0;
@@ -33,7 +36,6 @@ export const ImageWrapper = styled.div`
   float: left;
   font-size: 0;
   position: relative;
-  &:hover > div { opacity: 1};
   @media(max-width:768px){
     width: 50%;
   }
@@ -56,6 +58,8 @@ export const Overlay = styled.div`
   font-size: 15px;
   opacity: 0;
   margin:0;
+  transition: opacity 0.8s ease-in-out;
+  &:hover{ opacity: 1};
 `
 
 export const OverlaySpan = styled.span`
@@ -68,6 +72,7 @@ export const OverlaySpan = styled.span`
   padding: 10px 20px;
   cursor: pointer;
   border: 2px solid #eb5424;
+  color:#eb5424;
 `
 export const Hr = styled.hr`
   display: block;
@@ -76,6 +81,10 @@ export const Hr = styled.hr`
   width: 429px;
   border: none;
   margin-bottom: 80px;
+  @media screen and (max-width:1000px){
+    width: 276px;
+    margin-bottom: 50px;
+  }
   @media screen and (max-width:768px){
     width: 200px;
     margin-bottom: 35px;

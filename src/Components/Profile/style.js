@@ -13,10 +13,14 @@ export const ProfileSk = styled.div`
 export const ProfileSkPro = styled.div`
   width: 50%;
   float: left;
-  @media(max-width:768px){
-    width: 100%;
+  @media(max-width:1000px){
+    margin:auto;
+    width: 60%;
     float: none;
     margin-bottom: 50px;
+  }
+  @media(max-width:768px){
+    width: 100%;
   }
 `
 
@@ -55,6 +59,11 @@ export const SpanWeb = styled.span`
 export const SkillsSection = styled.div`
   width: 50%;
   float: left;
+  @media(max-width:1000px){
+    width: 60%;
+    margin:auto;
+    float: none;
+  }
   @media(max-width:768px){
     width: 100%;
     float: none;
@@ -130,6 +139,9 @@ export const Hr = styled.hr`
   width: 205px;
   border: none;
   margin-bottom: 40px;
+  @media screen and (max-width:1000px){
+    margin-bottom: 20px;
+  }
   @media screen and (max-width:768px){
     width: 200px;
     margin:auto;

@@ -36,6 +36,9 @@ export const InfoTitle = styled.h2`
   margin-top:0;
   margin-bottom:20px;
   padding-top:75px;
+  @media(max-width:1060px){
+    font-size: 40px;
+  }
   @media(max-width:768px){
     font-size: 30px;
     margin:0;
@@ -56,6 +59,9 @@ export const InfoDir = styled.h4`
   color: #eb5424;
   margin-bottom: 15px;
   margin-top:15px;
+  @media(max-width:1060px){
+    font-size: 30px;
+  }
   @media(max-width:768px){
     font-size: 20px;
     margin:0;
