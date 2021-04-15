@@ -9,4 +9,4 @@ Hope you like it.
   <img src="https://github.com/shhm8905/template-3/blob/master/public/myprofile.png" />
 </p>
 
-⭐️ To see my CV => [shhm8905](https://shhm8905.github.io/template-3/)
+⭐️ To see my CV => [shhm8905](https://shhm8905.github.io/My-CV/)
