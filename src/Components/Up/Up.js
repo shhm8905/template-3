@@ -1,5 +1,5 @@
 import React from 'react';
-import{HashLink} from "react-router-hash-link";
+import{Link} from "react-scroll";
 import "./Up.css";
 
 function Up() {
@@ -14,9 +14,9 @@ function Up() {
 
     return (
         <div className="upIcon" id="upIcon">
-            <HashLink smooth to="#navbar" >
+            <Link smooth={true} to="navbar" >
             <i className="fa fa-angle-double-up icon" aria-hidden="true"></i>
-            </HashLink>
+            </Link>
         </div>
     )
 }

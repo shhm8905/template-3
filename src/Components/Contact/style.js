@@ -34,10 +34,7 @@ export const Form = styled.form`
   margin:auto;
   width: 45%;
   padding:30px;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23616161'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: rgba(0,0,0,0.8);
   @media(max-width:1400px){
     width:75%;
   }
@@ -120,10 +117,7 @@ export const AnsweTitle = styled.h3`
   }
 `
 export const AnsweDesc = styled.h3`
-  display:none;
-  color: aliceblue;
-  background: #03a5037a;
-  padding: 20px;
+  color: #2ebf00;
   border-radius: 5%;
   width: 80%;
   margin: 10px auto;

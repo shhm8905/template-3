@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import{HashLink} from "react-router-hash-link";
+import{Link} from "react-scroll";
 import close from './images/close1.png';
 import open from './images/op.png';
 
@@ -19,7 +19,7 @@ export const Logo = styled.div`
   }
 `
 
-export const LogoText = styled(HashLink)`
+export const LogoText = styled(Link)`
   padding:8px;
   margin:0;
   font-size: 30px;
@@ -47,7 +47,7 @@ export const ListItem = styled.li`
   }
 `
 
-export const StyledNavLink = styled(HashLink)`
+export const StyledNavLink = styled(Link)`
   display: block;
   color: #0000008c;
   text-decoration: none;

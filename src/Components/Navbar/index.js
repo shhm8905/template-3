@@ -14,18 +14,18 @@ const Navbar = () => {
         <NavbarSection id="navbar" >
             <div className="container">
                 <Logo>
-                    <LogoText smooth to="#navbar" >My Profile</LogoText>
+                    <LogoText smooth={true} duration={2000} to="navbar" >My Profile</LogoText>
                 </Logo>
 
                 < Input type="checkbox" checked={checked} onChange={handleChange} id=" nav " />
                 < Label htmlFor=" nav " > </ Label >
 
                 <UlList>
-                    <ListItem><StyledNavLink smooth to="#work">Work</StyledNavLink></ListItem>
-                    <ListItem><StyledNavLink smooth to="#portfolio">Portfolio</StyledNavLink></ListItem>
-                    <ListItem><StyledNavLink smooth to="#resume">Resume</StyledNavLink></ListItem>
-                    <ListItem><StyledNavLink smooth to="#about">About</StyledNavLink></ListItem>
-                    <ListItem><StyledNavLink smooth to="#contact">Contact</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink smooth={true} duration={2000} to="work">Work</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink smooth={true} duration={2000} to="portfolio">Portfolio</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink smooth={true} duration={2000} to="resume">Resume</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink smooth={true} duration={2000} to="about">About</StyledNavLink></ListItem>
+                    <ListItem><StyledNavLink smooth={true} duration={2000} to="contact">Contact</StyledNavLink></ListItem>
                 </UlList>
             </div>    
         </NavbarSection>
